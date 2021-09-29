@@ -1,2 +1,2 @@
-let h = "Hello World"
+let h = "Hello World";
 console.log(h);
