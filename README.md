@@ -23,12 +23,14 @@ $ sudo apt install node-typescript
 ```
 
 ## Getting Started
-### Write code
+### Windows
+
+#### Write code
 ```ts
 let h = "Hello World"
 console.log(h);
 ```
-### Transpile code
+#### Transpile code
 ```console
 $ ts hello.ts
 // generates a `hello.js` file
@@ -38,13 +40,39 @@ $ ts hello.ts --outFile hello
 // generates a `hello` file
 ```
 
-### Print code
+#### Print code
 ```console
 $ npm hello.js
 
 // OR
 
 $ npm hello
+```
+
+### MacOS
+
+#### Write code
+```ts
+let h = "Hello World"
+console.log(h);
+```
+#### Transpile code
+```console
+$ tsc hello.ts
+// generates a `hello.js` file
+
+// M-2
+$ tsc hello.ts --outFile hello
+// generates a `hello` file
+```
+
+#### Print code
+```console
+$ node hello.js
+
+// OR
+
+$ node hello
 ```
 
 ## Troubleshooting
