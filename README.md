@@ -22,6 +22,16 @@ $ sudo apt get update
 $ sudo apt install node-typescript
 ```
 
+### MacOS
+- M-1
+```console
+// globally
+$ npm install -g typescript
+
+// locally
+$ npm install --save-dev typescript
+```
+
 ## Getting Started
 ### Windows
 
