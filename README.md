@@ -104,7 +104,7 @@ const eoslime = require('eoslime');
 const randomName = eoslime.utils.randomName();
 console.log("Random name: " + randomName);		// => Random name: [object Promise]
 ```
-* Reason: The promise will always log pending as long as its results are not resolved yet. You must call .then on the promise to capture the results regardless of the promise state (resolved or still pending):
+* Reason: The promise will always log pending as long as its results are not resolved yet. You must call .then on the promise to capture the results regardless of the promise state (resolved or still pending) [source](https://stackoverflow.com/a/38884856/6774636).
 * After:
 ```ts
 const eoslime = require('eoslime');
