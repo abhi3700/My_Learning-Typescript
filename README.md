@@ -87,13 +87,33 @@ $ node hello
 ```
 
 ## Troubleshooting
-* Error: `error TS2304: Cannot find name 'unknown'.`
-	- Solution:
+### Error: `error TS2304: Cannot find name 'unknown'.`
+* Solution:
 
 ```
 declare global {
   type unknown = any
 }
+```
+### Error: `Not able to print Promise <pending> result`
+* Before:
+```ts
+const eoslime = require('eoslime');
+
+// a promise pending funciton
+const randomName = eoslime.utils.randomName();
+console.log("Random name: " + randomName);		// => Random name: [object Promise]
+```
+
+* After:
+```ts
+const eoslime = require('eoslime');
+
+// a promise pending funciton
+const randomName = eoslime.utils.randomName();
+randomName.then(function(result){
+	console.log("Random name: " + result);		// => Random name: lfb3a45e344e
+})
 ```
 
 ### References
@@ -101,3 +121,4 @@ declare global {
 * [TypeScript Best Practices — Semicolons and Spacing](https://levelup.gitconnected.com/typescript-best-practices-semicolons-and-spacing-5be9c5963604)
 * [Typescript Exercise](https://github.com/typescript-exercises/typescript-exercises/tree/master/src/exercises)
 * [Clean code Typescript](https://github.com/labs42io/clean-code-typescript)
+* [Understanding `promise` before you start with `async/await`](https://bluepnume.medium.com/learn-about-promises-before-you-start-using-async-await-eb148164a9c8)
