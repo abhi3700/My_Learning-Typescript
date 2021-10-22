@@ -116,9 +116,14 @@ randomName.then(function(result){
 })
 ```
 
+## Repositories
+* TS Unit Tests Setup - https://github.com/ChiragRupani/TSUnitTestsSetup
+* 
+
 ### References
 * [TypeScript tutorial in Visual Studio Code](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
 * [TypeScript Best Practices — Semicolons and Spacing](https://levelup.gitconnected.com/typescript-best-practices-semicolons-and-spacing-5be9c5963604)
 * [Typescript Exercise](https://github.com/typescript-exercises/typescript-exercises/tree/master/src/exercises)
 * [Clean code Typescript](https://github.com/labs42io/clean-code-typescript)
 * [Understanding `promise` before you start with `async/await`](https://bluepnume.medium.com/learn-about-promises-before-you-start-using-async-await-eb148164a9c8)
+* [Writing unit tests in TypeScript](https://chiragrupani.medium.com/writing-unit-tests-in-typescript-d4719b8a0a40)
