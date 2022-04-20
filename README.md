@@ -18,6 +18,33 @@ My Learning on Typescript programming language
 ![types](img/types.png)
 * In TypeScript, the code can be made to look like without defining specific type like JS by declaring variables as `any`.
 * The idea is to throw unexpected error at compile-time not during run-time.
+* Prefer using `===` instead of `==` in typescript.
+  - `===` checks the types of both sides first & then the value. In TS, `==` would also work in similar way.
+  - `==` sometimes might give an unexpected result. 
+  
+So, it's better to use `===` than `==` in TS.
+
+E.g.
+
+```console
+let str = "1";
+let num = 1;
+
+console.log(str == num);
+```
+
+After compile,
+
+```console
+comparisons.ts:4:13 - error TS2367: This condition will always return 'false' since the types 'string' and 'number' have no overlap.
+
+4 console.log(str == num);
+              ~~~~~~~~~~
+
+Found 1 error.
+```
+
+Hence, it's not wrong to use `==`. But, still for safety use `===` over `==` 
 
 ## Installation
 
